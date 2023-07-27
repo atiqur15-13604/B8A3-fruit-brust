@@ -7,51 +7,149 @@
       <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
          rel="stylesheet" type="text/css" />
       <script src="https://cdn.tailwindcss.com"></script>
+
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
    </head>
 
    <body>
       <header>
-
+         <nav class="my-6">
+            <section class="navbar lg:hidden">
+              <!-- MOBILE -->
+              <div class="flex navbar-start lg:hidden">
+                <img class="w-5" src="./images/logo.png" alt="" />
+                <h4 class="text-lg font-bold text-black lg:text-[#FFF]">
+                  Fruit Burst
+                </h4>
+              </div>
+              <div class="navbar-end lg:hidden">
+                <div class="dropdown lg:hidden">
+                  <label tabindex="0" class="btn btn-ghost btn-circle">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h7"
+                      />
+                    </svg>
+                  </label>
+                  <ul
+                    tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 relative right-7"
+                  >
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                    <li>
+                      <div class="relative">
+                        <input
+                          type="text"
+                          placeholder="Search here"
+                          class="input input-bordered w-36 h-7 text-black bg-[#FFF] rounded-3xl"
+                        />
+                        <i
+                          class="fa-solid fa-magnifying-glass absolute text-center top-3 right-12 text-[#121212]"
+                        ></i>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <section class="hidden lg:flex">
+              <!-- Large -->
+    
+              <div
+                class="navbar w-4/5 m-auto lg:bg-[#F85559] lg:rounded-[500px] px-4 py-0 gap-40 lg:gap-0"
+              >
+                <div class="navbar-start hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-lg text-[#FFF]">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                  </ul>
+                </div>
+    
+                <div class="navbar-center hidden lg:flex">
+                  <div class="flex">
+                    <img class="w-5 lg:w-9" src="./images/logo.png" alt="" />
+                    <h4
+                      class="text-lg lg:text-4xl font-bold text-black lg:text-[#FFF]"
+                    >
+                      Fruit Burst
+                    </h4>
+                  </div>
+                </div>
+                <div class="navbar-end hidden lg:flex relative">
+                  <div class="">
+                    <input
+                      type="text"
+                      placeholder="Search here"
+                      class="input input-bordered lg:w-72 md:w-auto text-black bg-[#FFF] rounded-3xl"
+                    />
+                    <i
+                      class="fa-solid fa-magnifying-glass absolute text-center top-4 right-4 text-[#121212]"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </nav>
       </header>
 
       <main>
          <section>
             <div>
                <div class="carousel w-full">
-                  <div id="slide1" class="carousel-item relative w-full">
-                     <img
+                  <div id="slide1" class="carousel-item relative w-full" style="background-image: url(images/banner1.png);">
+
+                     <!-- <img
                         src="/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
-                        class="w-full" />
+                        class="w-full" /> -->
                      <div
                         class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide4" class="btn btn-circle">❮</a>
                         <a href="#slide2" class="btn btn-circle">❯</a>
                      </div>
                   </div>
-                  <div id="slide2" class="carousel-item relative w-full">
-                     <img
+                  <div id="slide2" class="carousel-item relative w-full" style="background-image: url(images/banner2.png);">
+                     <!-- <img
                         src="/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
-                        class="w-full" />
+                        class="w-full" /> -->
                      <div
                         class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide1" class="btn btn-circle">❮</a>
                         <a href="#slide3" class="btn btn-circle">❯</a>
                      </div>
                   </div>
-                  <div id="slide3" class="carousel-item relative w-full">
-                     <img
+                  <div id="slide3" class="carousel-item relative w-full" style="background-image: url(images/banner3.png);">
+                     <!-- <img
                         src="/images/stock/photo-1414694762283-acccc27bca85.jpg"
-                        class="w-full" />
+                        class="w-full" /> -->
                      <div
                         class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide2" class="btn btn-circle">❮</a>
                         <a href="#slide4" class="btn btn-circle">❯</a>
                      </div>
                   </div>
-                  <div id="slide4" class="carousel-item relative w-full">
-                     <img
+                  <div id="slide4" class="carousel-item relative w-full" style="background-image: url(images/banner4.png);">
+                     <!-- <img
                         src="/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
-                        class="w-full" />
+                        class="w-full" /> -->
                      <div
                         class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide3" class="btn btn-circle">❮</a>
